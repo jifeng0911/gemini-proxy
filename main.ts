@@ -4,7 +4,7 @@ import { serve } from "https://deno.land/std@0.177.0/http/server.ts";
 console.log(`[DEBUG] Script starting up at ${new Date().toISOString()}`);
 
 const GEMINI_API_KEY = Deno.env.get("GEMINI_API_KEY");
-const MODEL_NAME = "gemini-1.5-flash-latest";
+const MODEL_NAME = "gemini-2.5-flash";
 
 serve(async (req) => {
   console.log(`[LOG] Received a request. Method: ${req.method}, URL: ${req.url}`);
